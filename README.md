@@ -1,9 +1,21 @@
 # Svelte에서 Supabase 사용해 보기
 - 본 프로젝트는 toy project
-
-## Supabase 사용법
-
-
+- 참고 동영상: https://www.youtube.com/watch?v=mPQyckogDYc
+  - 보고 따라하기에는 그닥 좋은 내용은 아님
+  - promise를 사용하는 패턴은 참고가 됨
+  - supabase를 완벽하게 숙지한 상태가 아닌 듯함. 연동이 살짝 삐걱됨
+## Supabase 첫 사용 후기
+- Database
+  - 비교적 사용하기 쉬움. 
+  - 단, Policy 설정이 Postgre db에 sql 구문으로 정의. 
+  - Row Level Security 개념 정확히 이해하는 것이 필요
+    - https://supabase.com/docs/guides/auth/row-level-security
+- Auth
+  - magic link 방식 외의 다른 auth 방법도 봤으면 좋겠음
+- Storage
+  - private bucket 에 대한 hands-on 도 필요한 상태
+- 다음에 참고할 프로젝트
+  https://github.com/supabase-community/svelte-kanban
 
 ## Tailwind CSS를 Sveltekit 에서 사용하는 방법
 - https://tailwindcss.com/docs/guides/sveltekit
@@ -43,6 +55,11 @@ module.exports = {
 ```
 .netlify
 ```
+- 실제 netlify에는 연동 안함
+
+
+## To Do
+[ ] dot env 도입
 
 
 # create-svelte
